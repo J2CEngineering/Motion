@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <Button
+        android:id="@+id/set_low_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/set_low_button_background"
+        android:enabled="false"
+        android:text="@string/settings_set_low"
+        app:layout_constraintBottom_toTopOf="@+id/set_time_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/settings_high_postion_textbox"
+        app:layout_constraintTop_toBottomOf="@+id/set_high_button" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center_vertical|end"
+        android:lines="1"
+        android:text="@string/settings_low_position_label"
+        android:textAlignment="gravity"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/set_low_button"
+        app:layout_constraintEnd_toStartOf="@+id/settings_low_position_textbox"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/set_low_button" />
+
+    <TextView
+        android:id="@+id/settings_low_position_textbox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/textbox_boarder"
+        android:gravity="center_vertical|end"
+        android:lines="1"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/percentage_format_label"
+        android:textAlignment="gravity"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/set_low_button"
+        app:layout_constraintEnd_toStartOf="@+id/set_low_button"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/set_low_button" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:autoSizeTextType="uniform"
+        android:lines="1"
+        android:text="@string/set_position_label"
+        android:textAlignment="viewEnd"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/settings_set_position"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manual_control_button" />
+
+    <TextView
+        android:id="@+id/settings_set_position"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/textbox_boarder"
+        android:lines="1"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/percentage_format_label"
+        android:textAlignment="viewEnd"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:autoSizeTextType="uniform"
+        android:lines="1"
+        android:text="@string/curr_position_label"
+        android:textAlignment="viewEnd"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/settings_current_position"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/textbox_boarder"
+        android:lines="1"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/percentage_format_label"
+        android:textAlignment="viewEnd"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/settings_fragment_button_background"
+        android:text="@string/settings_log_in_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/settings_name_textBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/textbox_boarder"
+        android:gravity="center_vertical"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/rename_button"
+        app:layout_constraintEnd_toStartOf="@+id/rename_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rename_button" />
+
+    <Button
+        android:id="@+id/rename_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/settings_fragment_button_background"
+        android:text="@string/settings_rename_label"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/settings_name_textBox"
+        app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+    <TextView
+        android:id="@+id/settings_address_textBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/textbox_boarder"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rename_button" />
+
+    <com.j2cengineering.motion.controlUI.CylinderListInfoView
+        android:id="@+id/settings_cylinder_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_address_textBox"
+        app:bandColor="@color/motion_blue"/>
+
+    <Button
+        android:id="@+id/manual_control_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/settings_fragment_button_background"
+        android:enabled="false"
+        android:text="@string/settings_set_manual_control"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_cylinder_view"/>
+
+    <Button
+        android:id="@+id/plus_one_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/settings_fragment_button_background"
+        android:enabled="false"
+        android:text="@string/settings_plus_one"
+        app:layout_constraintEnd_toStartOf="@+id/plus_five_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_current_position"/>
+
+    <Button
+        android:id="@+id/plus_five_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_fragment_button_background"
+        android:enabled="false"
+        android:text="@string/settings_plus_five"
+        app:layout_constraintEnd_toStartOf="@+id/minus_five_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/plus_one_button"
+        app:layout_constraintTop_toBottomOf="@+id/settings_current_position"/>
+
+    <Button
+        android:id="@+id/minus_five_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/settings_fragment_button_background"
+        android:enabled="false"
+        android:text="@string/settings_minus_five"
+        app:layout_constraintEnd_toStartOf="@+id/minus_one_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/plus_five_button"
+        app:layout_constraintTop_toBottomOf="@+id/settings_current_position" />
+
+    <Button
+        android:id="@+id/minus_one_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/settings_fragment_button_background"
+        android:enabled="false"
+        android:text="@string/settings_minus_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/minus_five_button"
+        app:layout_constraintTop_toBottomOf="@+id/settings_current_position"/>
+
+    <Button
+        android:id="@+id/calibration_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/settings_fragment_button_background"
+        android:enabled="false"
+        android:text="@string/settings_set_calibration_mode"
+        app:layout_constraintBottom_toTopOf="@+id/manual_purge_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_time_button"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center_vertical|end"
+        android:lines="1"
+        android:text="@string/settings_high_position_label"
+        android:textAlignment="gravity"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/set_high_button"
+        app:layout_constraintEnd_toStartOf="@+id/settings_high_postion_textbox"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/set_high_button" />
+
+    <TextView
+        android:id="@+id/settings_high_postion_textbox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/textbox_boarder"
+        android:gravity="center_vertical|end"
+        android:lines="1"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/percentage_format_label"
+        android:textAlignment="gravity"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/set_high_button"
+        app:layout_constraintEnd_toStartOf="@+id/set_high_button"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/set_high_button" />
+
+    <Button
+        android:id="@+id/set_high_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/set_high_button_background"
+        android:enabled="false"
+        android:text="@string/settings_set_high"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/set_low_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/settings_high_postion_textbox"
+        app:layout_constraintTop_toBottomOf="@+id/minus_one_button" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="@string/settings_system_time_label"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/set_time_button"
+        app:layout_constraintEnd_toStartOf="@+id/settings_time_textbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/set_time_button" />
+
+    <TextView
+        android:id="@+id/settings_time_textbox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/textbox_boarder"
+        android:lines="2"
+        android:text="@string/settings_time_placeholder"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/set_time_button"
+        app:layout_constraintEnd_toStartOf="@+id/set_time_button"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/set_time_button" />
+
+    <Button
+        android:id="@+id/set_time_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/settings_fragment_button_background"
+        android:enabled="false"
+        android:text="@string/settings_set_time"
+        app:layout_constraintBottom_toTopOf="@+id/calibration_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/set_low_button"
+        app:layout_constraintTop_toBottomOf="@+id/set_low_button" />
+
+    <Button
+        android:id="@+id/manual_purge_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/settings_fragment_button_background"
+        android:text="@string/setting_start_purge"
+        app:layout_constraintBottom_toTopOf="@+id/set_temperature_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calibration_button" />
+
+
+    <Button
+        android:id="@+id/set_temperature_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/settings_fragment_button_background"
+        android:text="@string/setting_set_temperature_units"
+        app:layout_constraintBottom_toTopOf="@+id/change_password_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manual_purge_button" />
+
+    <Button
+        android:id="@+id/change_password_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/settings_fragment_button_background"
+        android:enabled="false"
+        android:text="@string/setting_change_password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_temperature_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

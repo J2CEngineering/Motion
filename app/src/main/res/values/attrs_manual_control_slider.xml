@@ -1,0 +1,4 @@
+<resources>
+    <declare-styleable name="ManualControlSlider">
+    </declare-styleable>
+</resources>

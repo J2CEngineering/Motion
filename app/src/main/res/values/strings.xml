@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Motion</string>
+    <string name="title_item_detail">Item Detail</string>
+
+
+    <string name="model_name">Model: %s</string>
+    <string name="serial_number">S\\N: %s</string>
+    <string name="connect_button">CONNECT</string>
+    <string name="settings_button">SETTINGS</string>
+    <string name="alerts_button">ALERTS</string>
+    <string name="save_button">SAVE</string>
+
+    <string name="alert_icon_description">Cylinder Alerts Indicator</string>
+
+    <string name="temp_basic_data">%d/%d</string>
+
+    <string name="set_position_label">Set Position:</string>
+    <string name="curr_position_label">Current Position:</string>
+    <string name="top_end_pressure_label">Top End Pressure:</string>
+    <string name="bottom_end_pressure_label">Bottom End Pressure:</string>
+    <string name="temperature_label">Temperature:</string>
+
+    <string name="percentage_format_label">%d%%</string>
+    <string name="pressure_format_label">%d psi</string>
+    <string name="temperature_fahrenheit_format_label">%d F</string>
+    <string name="temperature_celsius_format_label">%d C</string>
+    <string name="manual_purge_label">Manual Purge</string>
+    <string name="start_purge_button">Start</string>
+
+    <string name="settings_log_in_label">Log In</string>
+    <string name="settings_log_out_label">Log Out</string>
+    <string name="settings_rename_label">Rename</string>
+    <string name="settings_set_manual_control">Turn On Manual Control</string>
+    <string name="settings_clear_manual_control">Turn Off Manual Control</string>
+
+    <string name="settings_plus_one">+1</string>
+    <string name="settings_plus_five">+5</string>
+    <string name="settings_minus_one">-1</string>
+    <string name="settings_minus_five">-5</string>
+
+    <string name="settings_set_calibration_mode">Turn On Calibration Mode</string>
+    <string name="settings_clear_calibration_mode">Turn Off Calibration Mode</string>
+
+    <string name="settings_high_position_label">High Position:</string>
+    <string name="settings_low_position_label">Low Position:</string>
+    <string name="settings_system_time_label">System Time:</string>
+    <string name="settings_time_placeholder">00/00/00 00:00:00</string>
+    <string name="settings_time_string">%1$02d/%2$02d/%3$02d %4$02d:%5$02d:%6$02d</string>
+
+    <string name="settings_set_high">Set High</string>
+    <string name="settings_set_low">Set Low</string>
+    <string name="settings_set_time">Set Time</string>
+
+    <string name="setting_start_purge">Start Purge</string>
+    <string name="setting_set_temperature_units">Set Temperature Units</string>
+    <string name="setting_change_password">Change Password</string>
+
+    <string name="login_text">Login</string>
+    <string name="username_login">User Name</string>
+    <string name="password_login">Password</string>
+
+    <string name="cylinder_old_password">Old Password</string>
+    <string name="cylinder_new_password">New Password</string>
+    <string name="cylinder_show_password">Show Password</string>
+    <string name="cylinder_password_change">Change</string>
+    <string name="close_button">Close</string>
+
+    <string name="temp_fahrenheit">Fahrenheit</string>
+    <string name="temp_celsius">Celsius</string>
+
+    <!-- Alert Window String -->
+    <string name="refresh_button">Refresh</string>
+    <string name="clear_button">Clear Alerts</string>
+
+    <string name="cylinder_list_new_connection">New Connection</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="scanning_status_active">Scanning...</string>
+    <string name="scanning_status_stopped">Scanning Stopped</string>
+
+    <string name="scanning_start_button">Start Scanning</string>
+    <string name="scanning_stop_button">Stop Scanning</string>
+
+    <string name="preference_file_key">com.j2cengineering.Motion.PREFERENCE_FILE_KEY</string>
+    <string name="saved_temperature_units">com.j2cengineering.Motion.temperatureUnits</string>
+
+</resources>

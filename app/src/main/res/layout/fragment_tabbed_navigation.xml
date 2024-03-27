@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tabbedUI.TabbedNavigationFragment">
+
+    <TextView
+        android:id="@+id/tab_cylinder_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/cylinder_data_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.j2cengineering.motion.controlUI.CylinderListInfoView
+        android:id="@+id/cylinder_data_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        app:bandColor="@color/motion_blue"
+        app:layout_constraintBottom_toTopOf="@id/fragmentContainerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tab_cylinder_name" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.j2cengineering.motion.tabbedUI.TabbedDashboardFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/cylinder_tab_nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cylinder_data_view"
+        app:navGraph="@navigation/primary_cylinder_tabbed_nav_graph" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/cylinder_tab_nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragmentContainerView"
+        app:menu="@menu/cylinder_tab_menu"
+        app:itemIconTint="@color/nav_bar_tab_item_foreground"
+        app:itemTextColor="@color/nav_bar_tab_item_foreground"
+        android:background="#FAF6F6"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

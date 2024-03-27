@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="AlertTypes">
+        <item>MESSAGE</item>
+        <item>START UP</item>
+        <item>POWER DOWN</item>
+        <item>USER LOG IN</item>
+        <item>PASSWORD CHANGE</item>
+        <item>VALUE CHANGED</item>
+        <item>VALUE WRITE FAILED</item>
+    </string-array>
+
+</resources>

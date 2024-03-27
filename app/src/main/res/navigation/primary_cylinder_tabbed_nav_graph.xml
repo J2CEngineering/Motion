@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/primary_cylinder_tabbed_nav_graph"
+    app:startDestination="@id/dashboardFragment2">
+
+    <fragment
+        android:id="@+id/dashboardFragment2"
+        android:name="com.j2cengineering.motion.tabbedUI.TabbedDashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_tabbed_dashboard" />
+    <fragment
+        android:id="@+id/settingsFragment2"
+        android:name="com.j2cengineering.motion.tabbedUI.TabbedDashboardFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_tabbed_calibration" />
+    <fragment
+        android:id="@+id/alertsFragment2"
+        android:name="com.j2cengineering.motion.AlertsFragment"
+        android:label="AlertsFragment" />
+</navigation>

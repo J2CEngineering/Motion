@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cylinder_nav_dashboard"
+        android:title="Dashboard"
+        android:menuCategory="secondary"
+        />
+    <item
+        android:id="@+id/cylinder_nav_calibration"
+        android:title="Calibration"
+        android:menuCategory="secondary"
+        />
+    <item
+        android:id="@+id/cylinder_nav_Alerts"
+        android:title="Alerts"
+        android:menuCategory="secondary"
+        />
+</menu>

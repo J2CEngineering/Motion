@@ -1,0 +1,7 @@
+<resources>
+    <declare-styleable name="cylinderListInfoView">
+        <attr name="bandColor" format="color"/>
+        <attr name="position" format="integer"/>
+        <attr name="percentage" format="integer"/>
+    </declare-styleable>
+</resources>
